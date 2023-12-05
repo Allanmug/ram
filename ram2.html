@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ram2.css">
+    <title>RAM Beauty Products and Cosmetics</title>
+</head>
+
+<body>
+    <header>
+        <h1><b> RAM Beauty Products and Cosmetics</b></h1>
+        <p>Quality healthcare at your fingertips</p>
+    </header>
+
+    <nav>
+    <div class="search-container">
+        <input id="searchbar" onkeyup="search_product()" type="text" name="search" placeholder="search product.."> 
+         <i class="fa fa-search"></i> 
+    </div>
+
+        <div class="container">
+            <div class="logo">
+                <img src="images/2.jpg" alt="CEO Profile Picture">
+            </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            
+        </div>
+        
+    </nav>
+    <div class="welcome"><h2><im> You are welcome to RAMS beauty products and cosmetics</im></h2></div>
+    
+
+    <section class="main-content">
+        <div class="product">
+            <img src="images/Bye Bye Ulcers.jpg" alt="Ulcers">
+            <h3>Bye Bye Ulcers</h3>
+            <p>Effective relief and treatment for ulcers</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/Flat Tummy.jpg" alt="Tummy">
+            <h3>Flat Tummy</h3>
+            <p>Reduce your tummy in a few days</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/Look Nice.jpg" alt="LookNice">
+            <h3>Look Nice</h3>
+            <p>Your appearance is your diginity</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="images/Mouth Wash.jpg" alt="MouthWash">
+            <h3>Mouth Wash</h3>
+            <p>For a fresh and clean breath</p>
+            <button>Add to Cart</button>
+        </div>
+       
+        <div class="product">
+            <img src="images/Cough Up.jpg" alt="Cough">
+            <h3>Cough Up</h3>
+            <p>A quick remedy for Cough</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="images/Go Small.jpg" alt="GoSmall">
+            <h3>Go Small</h3>
+            <p>Reduces size to what you desire</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="images/Mens Coffee.jpg" alt="MensCoffee">
+            <h3>Men's coffee</h3>
+            <p> Coffee for men</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="images/Mpirivuma.jpg" alt="Mprivuma">
+            <h3>Mpirivuma</h3>
+            <p>Mpirivuma Extra for multitreatment</p>
+            <button>Add to Cart</button>
+        </div> 
+        
+        <div class="product">
+            <img src="images/Mugaba.jpg" alt="Mugaba">
+            <h3>Mugaba</h3>
+            <p>Get rid of stretch marks easily</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="images/Musujja.jpg" alt="sujja">
+            <h3>Musujja</h3>
+            <p>Remedy and cure for malaria</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="images/Pulling Oil.jpg" alt="oil">
+            <h3>Pulling oil</h3>
+            <p>Do you want to pull? Here is an oil for you.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/Skin Tags.jpg" alt="Tags">
+            <h3>Skin Tags</h3>
+            <p>Removes Tags completely</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="images/UTI & Infections.jpg" alt="Tags">
+            <h3>UTIs & Infections</h3>
+            <p>Treats UTIs and infections at all stages</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <!-- Add more product sections as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 757. All rights reserved.</p>
+    </footer>
+    <script>
+
+        function search_product() { 
+        let input = document.getElementById('searchbar').value 
+        input=input.toLowerCase(); 
+        let x = document.getElementsByClassName('product'); 
+      
+    for (i = 0; i < x.length; i++) {  
+        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+            x[i].style.display="none"; 
+        } 
+        else { 
+            x[i].style.display="list-item";                  
+        } 
+    } 
+} 
+    </script>
+</body>
+
+</html>

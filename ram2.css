@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/Aloevera.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #007BFF; /* Blue header background */
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #333; /* Dark gray navigation background */
+    color: white;
+    padding: 0.5em;
+    text-align: left;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.search-bar {    
+text-align:right;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/*search trial*/
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.welcome{
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: green;
+}
+.logo img {
+    width: 50px; /* Adjust the size of the logo */
+    border-radius: 50%; /* Make the logo round */
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #007BFF; /* Blue footer background */
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Original styles here */
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: repeat;
+    }
+
+    header {
+        padding: 0.5em;
+    }
+
+    nav {
+        padding: 0.2em;
+        text-align: center;
+    }
+
+    .search-bar {
+        text-align: center;
+    }
+
+    .search-container {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .main-content {
+        margin: 10px;
+    }
+
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        position: relative;
+    }
+}
