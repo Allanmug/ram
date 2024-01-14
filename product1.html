@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ram2.css">
+    <title>Product Details - RAM Beauty Products and Cosmetics</title>
+</head>
+
+<body>
+    <header>
+        <h1><b> RAM Beauty Products and Cosmetics</b></h1>
+        <p>Quality healthcare at your fingertips</p>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="images/ramlogo.JPG" alt="CEO Profile Picture">
+            </div>
+            <div class="navcont" >
+            <ul>
+                <li><a href="ram2.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <section class="main-content" id="productDetailsContainer">
+        <div class="welcome"><h2><im>Product Details</im></h2></div>
+        <!-- Product details will be dynamically inserted here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 757. All rights reserved.</p>
+    </footer>
+</body>
+    <script>
+  const products = [
+        { id: 1, image:'images/Bye Bye Ulcers.jpg', name: 'Bye Bye Ulcers', description: 'For Effective relief and treatment for ulcers, <b><h3>health Aid Prevents</h3></b> <ol><li>Heals wounds in the intestinal walls,mouth</li><li>prevents constipation& heart burns</li><li>prevents burning sensations with in the stomach</li><li>stops accumulation of gases in the stomach</li></ol><h3>How to use it</h3><p>Add a table spoonful of the Powder of Bye bye ulcers on a cup of hot water or a tea spoonful on a hot source</p><p>The powder is used twice every day on a daily basis unless otherwise</p> ' },
+        {
+         id: 2,
+         image:'images/Flat Tummy.jpg' ,
+         name: 'Flat Tummy', 
+         description: 
+         'Reduce your tummy in a few days,<b><h3>Health Aid: Prevents</h3></b><ol><li>Improves the conmsuption of abdominal fats /burns belly fats</li><li>Controls the generation of fatty cells</li><li>Cleasing of the stomach</li><li>prevents constipation and its bad effects </li><li>Heals wounds in the intestinal walls even at their ealy stage </li></ol><h3>How to use it</h3><p>Boil one (1) cup of water, put one(1) table spoonful of the powder(Tummy)</p><p>Drink it once in the morning on a daily basis unless otherwise</p> ' },
+         {
+         id: 3,
+         image:'images/Look Nice.jpg' ,
+         name: 'Look Nice', 
+         description: 
+         'Your appearance is your diginity,<b><h3>Importance</h3></b><ol><li>it treats all skin diseases like pinpoles rush, ring worms, scables and blackspots</li><li>it reduces rinckles</li><li>protects you from skin diseases giving you a smooth soft skin</li></ol><h3>Note</h3><p>Enriched with all skin nourishing herbs that treat scables, woulds, heat rash ring worms , inchings, Fungal infections and all minor skin infections</p><p>Keeps the whole family skin soft smooth and healthy </p> ' },
+         {
+         id: 4,
+         image:'images/Mouth Wash.jpg' ,
+         name: 'Mouth Wash', 
+         description: 
+         'For a fresh and clean breath,<b><h3>Health Aid:</h3></b><ol><li>Heals and tightens bleeding gums</li><li>Hardens teeth</li><li>Fight bacteria that cause gum diseases and tooth decay</li><li>Reduces Plague</li><li>Prevents cavities and freshens breath preventing bad breath</li><li>Brightens and whitening teeth</li></ol><h3>How to use it</h3><p>A tooth brush is dipped into the liquid (mouth wash) </p><p>Brush carefully, Horizontally and vertically for some good time twice a day on a daily basis</p> ' },
+         {
+         id: 5,
+         image:'images/Cough Up.jpg' ,
+         name: 'Cough Up', 
+         description: 
+         'A quick remedy for Cough,<b><h3>Health Aid: Prevents</h3></b><p>COUGH AND FLU herbal is made of a herb which is indigineous , The mixture is ready to use without any undesirable side effects</p><h3>How to use it</h3><p>Adult: 2 table spoons 3times a day<p>Infant: One table spoon 3 times a day</p> ' },
+         {
+         id: 6,
+         image:'images/Go Small.jpg' ,
+         name: 'Go Smal', 
+         description: 
+         'Reduces size to what you desire,<b><h3>Health Aid:</h3></b><ol><li>Burns belly and body fats</li><li>Increases fat metabolism</li><li>Cleanses the Gut/ intestines </li><li>Weight loss </li><li>Deactivates Fat generating cells</li></ol><h3>How to use it</h3><p>Add a table spoonful of the powder (Go small) on a cup of Hot water.The poweder is used once (morning) every after 2 days. Unless otherwise</p> ' },
+         {
+         id:7 ,
+         image:'images/Mens Coffee.jpg' ,
+         name: 'Mens Coffee', 
+         description: 
+          /* The specific description not yet obtained*/
+          'please contact our help line for more details'},
+         {
+         id: 8,
+         image:'images/Mpirivuma.jpg' ,
+         name: 'Mpirivuma', 
+         description: 
+             /* The specific description not yet obtained*/
+             'please contact our help line for more details'},
+         {
+         id: 9,
+         image:'images/Mugaba.jpg' ,
+         name: 'Mugaba', 
+         description: 
+         'Get rid of stretch marks easily,<b><h3>Health Aid:</h3></b><ol><li>Removes Stretch marks</li><li>Removes some scars</li><li>Skin Restoration<li><li>Removes Acnes</li><li>Relieves skin rashes and infections </li><li>Increases Collagen poduction</li></ol><h3>How to use it</h3><p>Rub/Massage the Gel gently on the infected part twice or thrice a day on a daily basis</p>' },
+         {
+         id: 10,
+         image:'images/Musujja.jpg' ,
+         name: 'Musujja', 
+         description: 
+         'Remedy and cure for fever,<b><h3>Health Aid: Prevents</h3></b><ol><li>Weakness and Fatigue</li><li>Loss of appetite</li><li>High fever</li><li>Cures and relaxes Headache</li><li>Body pain</li><li>Vomiting and Norsea</li></ol><h3>How to use it</h3><p>It must be used only on hot water half a small tea spoonful twice a day on a daily basis </p><p>Put little hurney for better results</p> ' },
+         {
+         id: 11,
+         image:'images/Pulling Oil.jpg' ,
+         name: 'Pulling Oil', 
+         description: 
+          /* The specific description not yet obtained*/
+          'please contact our help line for more details'},
+        {
+         id: 12,
+         image:'images/Skin Tags.jpg' ,
+         name: 'Skin Tags', 
+
+         description: 
+          /* The specific description not yet obtained*/
+          'please contact our help line for more details'},
+         {
+         id: 13,
+         image:'images/UTI & Infections.jpg' ,
+         name: 'UTI & Infections', 
+         description: 
+         'Treats UTIs and infections at all stages,<b><h3>Health Aid: Prevents</h3></b><ol><li>Inching of the private parts</li><li>Bad Odour/Fungal smell</li><li>Burning sensation when urinating</li><li>Virginal Discharge </li><li>Virginal piles</li><li>Quick recovery of virginal normal froller</li><li>Minor Cramps</li></ol><h3>How to use it</h3><p>One table spoon in a cup of hot water ,2-3 times a day on a daily basis for better results </p><p>It should be taken and rinsed when warm.</p> ' },
+       
+    ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get product ID from the URL parameters
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const productId = urlSearchParams.get('id');
+        
+            if (productId) {
+                // Find the product details based on the ID
+                const product = products.find(p => p.id.toString() === productId);
+        
+                if (product) {
+                    // Display product details
+                    const detailsContainer = document.getElementById('productDetailsContainer');
+                    detailsContainer.innerHTML = `
+            <div class="product-container">
+                  <img src='${product.image}' alt="Product Image" class="product-image" id="productImage">
+                  <div class="product-info">
+                  <h2>${product.name}</h2>
+                  <p class="product-description">It's Purely herbal prepared and extracted from deep green and widly herbs commonly found in uganda.  ${product.description}</p>
+                  <h3>Recommendations</h3><p>It is recommended for Adults and infants with the prescribed problems <em>unless otherwise</em></p>
+                  <h3>contact us for more details</h3>
+                  <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+                  <button > Whatsapp</button>
+                  <h1>OR</h1>
+                  <button class="airtelnum">Tel: +256757644330</button>
+                  <h1>OR</h1>
+                  <button class="mtnnum" >Tel: +256778644330</button>
+
+              </div>
+              </div>
+                        <!-- Add more details as needed -->
+                    `;
+                } else {
+                    alert('Product not found!');
+                }
+            } else {
+                alert('Product ID not specified in the URL.');
+            }
+        });
+        function addToCart(){
+            alert("product added to cart")
+        };
+    </script>
+
+
+</html>
